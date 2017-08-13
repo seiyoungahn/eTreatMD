@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.exercise.seiyoung.exercise_etreatmd.PatientActivity">
+
+    <TextView
+        android:id="@+id/id_patient_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/id_patient_imageview"
+        android:layout_toEndOf="@+id/id_patient_imageview"
+        android:layout_alignBottom="@+id/id_patient_button" />
+
+    <Button
+        android:id="@+id/id_patient_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="take photo"
+        android:textSize="12sp"
+        android:layout_below="@+id/id_patient_imageview"/>
+
+    <ImageView
+        android:id="@+id/id_patient_imageview"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@android:drawable/ic_menu_report_image"
+        android:scaleType="centerCrop"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
